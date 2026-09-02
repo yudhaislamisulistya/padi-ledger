@@ -3,5 +3,6 @@ services:
     build: .
     container_name: research_padi_ledger
     restart: unless-stopped
+    network_mode: bridge
     ports:
       - "7113:7113"
