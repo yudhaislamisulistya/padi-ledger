@@ -1,5 +1,7 @@
 @import '../templates/css/bootstrap.min.css';
 @import '../templates/css/icons.min.css';
+@import '../templates/css/app.min.css';
+@import '../templates/css/custom.min.css';
 
 @font-face {
   font-family: 'HK Grotesk';
@@ -15,6 +17,6 @@
   font-display: swap;
 }
 
-html { background: #f4f7f5; scroll-behavior: smooth; }
-body { min-width: 320px; min-height: 100vh; margin: 0; font-family: 'HK Grotesk', Inter, system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+html { scroll-behavior: smooth; }
+body { min-width: 320px; min-height: 100vh; margin: 0; -webkit-font-smoothing: antialiased; }
 button:focus-visible, input:focus-visible, a:focus-visible { outline: 3px solid rgba(24,113,78,.28); outline-offset: 2px; }

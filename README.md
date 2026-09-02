@@ -34,7 +34,7 @@ Container dan host menggunakan port `7113`. Pemeriksaan kesehatan tersedia di `/
 ## Teknologi
 
 - React 19 dan Vite
-- Aset antarmuka dari `frontend/templates`
+- Struktur dashboard mengikuti `templates/index.html`
+- Sistem desain dari `templates/css`, `templates/fonts`, `templates/images`, dan `templates/js`
 - Nginx Alpine untuk produksi
 - CSV asli dari eksperimen penelitian
-
