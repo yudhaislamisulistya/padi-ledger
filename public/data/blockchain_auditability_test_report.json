@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "metric_assertions": {
+    "tx_hash_unique_rate": 1.0,
+    "blockchain_event_match_rate": 1.0,
+    "on_chain_success_rate": 1.0,
+    "verified_rate": 1.0,
+    "batch_traceability_coverage": 1.0
+  },
+  "logic_assertions": {
+    "duplicate_event_rejected": true,
+    "event_hash_verification_passed": true,
+    "modified_payload_changes_hash": true
+  },
+  "reference_blockchain_log_rows": 4768
+}

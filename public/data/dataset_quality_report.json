@@ -1,0 +1,126 @@
+{
+  "record_counts": {
+    "nodes": 759,
+    "events": 8752,
+    "sensor_logs": 28843,
+    "blockchain_logs": 4768,
+    "outcomes": 600
+  },
+  "process_path_variation": {
+    "unique_event_paths": 513,
+    "top_path_share": 0.01,
+    "top_5_paths": [
+      {
+        "path": "harvest -> weighing -> drying -> storage -> milling -> packing -> blockchain_anchor -> loading -> distribution -> retail_delivery",
+        "count": 6
+      },
+      {
+        "path": "harvest -> weighing -> cleaning -> drying -> storage -> milling -> packing -> blockchain_anchor -> loading -> distribution -> retail_delivery",
+        "count": 5
+      },
+      {
+        "path": "harvest -> weighing -> cleaning -> drying -> inspection -> storage -> quality_check -> reprocessing -> milling -> grading -> packing -> blockchain_anchor -> loading -> distribution -> retail_delivery",
+        "count": 5
+      },
+      {
+        "path": "harvest -> weighing -> drying -> quality_check -> re_drying -> storage -> quality_check -> reprocessing -> milling -> packing -> blockchain_anchor -> loading -> distribution -> retail_delivery",
+        "count": 4
+      },
+      {
+        "path": "harvest -> weighing -> cleaning -> drying -> inspection -> storage -> milling -> grading -> packing -> blockchain_anchor -> loading -> distribution -> retail_delivery",
+        "count": 4
+      }
+    ],
+    "events_per_batch": {
+      "min": 9.0,
+      "mean": 14.5867,
+      "median": 15.0,
+      "max": 19.0
+    }
+  },
+  "baseline_difficulty": {
+    "next_event_conditional_entropy_bits": 1.1637,
+    "next_node_conditional_entropy_bits": 3.5437,
+    "next_node_given_event_entropy_bits": 3.4107,
+    "target_node_frequency_top_share": 0.0456,
+    "event_type_frequency_top_share": 0.1095
+  },
+  "temporal_dynamics": {
+    "time_since_prev_min": {
+      "min": 0.0,
+      "mean": 1375.5265,
+      "median": 1018.22,
+      "max": 8421.57
+    },
+    "duration_min": {
+      "min": 1.0,
+      "mean": 399.646,
+      "median": 155.0,
+      "max": 4808.0
+    },
+    "delay_event_rate": 0.4006
+  },
+  "graph_complexity": {
+    "active_nodes": 759,
+    "degree_min_mean_median_max": {
+      "min": 7.0,
+      "mean": 23.0619,
+      "median": 12.0,
+      "max": 399.0
+    },
+    "top_10_degree_nodes": {
+      "FAC-JTG-001": 399,
+      "FAC-JTM-001": 379,
+      "FAC-JBR-001": 353,
+      "FAC-SSM-001": 250,
+      "FAC-SSL-001": 225,
+      "FAC-NTB-001": 201,
+      "VAL-X001": 199,
+      "VAL-001": 196,
+      "VAL-X002": 195,
+      "VAL-003": 190
+    },
+    "reroute_event_rate": 0.0662,
+    "rework_event_rate": 0.1128
+  },
+  "anomaly_and_outcome": {
+    "event_anomaly_rate": 0.2056,
+    "outcome_anomaly_counts": {
+      "0": 404,
+      "1": 196
+    },
+    "risk_level_counts": {
+      "medium": 165,
+      "high": 245,
+      "low": 190
+    },
+    "process_status_counts": {
+      "success": 6036,
+      "warning": 1728,
+      "delayed": 793,
+      "failed": 195
+    }
+  },
+  "sensor_outcome_signal": {
+    "mean_moisture_by_risk": {
+      "medium": 18.454,
+      "high": 20.0334,
+      "low": 18.2298
+    },
+    "mean_humidity_by_risk": {
+      "medium": 66.0532,
+      "high": 71.7948,
+      "low": 64.6222
+    },
+    "threshold_violation_rate": 0.435
+  },
+  "blockchain_traceability": {
+    "verification_status_counts": {
+      "verified": 4013,
+      "pending": 545,
+      "failed": 210
+    },
+    "on_chain_rate": 0.956,
+    "tx_per_batch": 7.9467
+  }
+}

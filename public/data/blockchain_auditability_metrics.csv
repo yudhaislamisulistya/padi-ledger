@@ -1,0 +1,6 @@
+Metric,Value,Calculation,Meaning
+tx_hash_unique_rate,1.0,unique transaction_hash / total valid blockchain transactions,Tests whether each blockchain transaction has a unique hash
+blockchain_event_match_rate,1.0,matched blockchain logs with valid post-harvest events / total blockchain logs,Tests whether blockchain records are linked to valid post-harvest events
+on_chain_success_rate,1.0,mean value of on_chain_flag,Tests the proportion of events successfully recorded on-chain
+verified_rate,1.0,verified transactions / total blockchain logs,Tests the proportion of events successfully verified by the smart contract logic
+batch_traceability_coverage,1.0,unique blockchain batches / total rice batches,Tests whether all rice batches have blockchain traceability records

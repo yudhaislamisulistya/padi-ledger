@@ -1,0 +1,7 @@
+services:
+  padi-ledger:
+    build: .
+    container_name: research_padi_ledger
+    restart: unless-stopped
+    ports:
+      - "7113:7113"
